@@ -2,7 +2,7 @@ import React from 'react'
 
 const BookList = ({ books, deleteBook }) => {
   if (books.length === 0) {
-    return <p style={{ textAlign: 'center', color: '#777' }}>No books 😕</p>
+    return <p style={{ textAlign: 'center', color: '#777' }}>No books</p>
   }
 
   return (
