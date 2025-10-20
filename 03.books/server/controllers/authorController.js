@@ -43,7 +43,6 @@ exports.updateAuthor = async (req, res) => {
 
 exports.deleteAuthor = async (req, res) => {
   try {
-    // проверяем связанность с книгой
     const existingBook = await Book.findOne({ author: req.params.id });
     if (existingBook) {
       return res.status(409).json({ message: "Author is used by a book" });
